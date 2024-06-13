@@ -1,0 +1,4 @@
+# Ignoring specific files
+Dev/
+Renders/
+facialDetectionCleanMesh.blend
