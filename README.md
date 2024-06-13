@@ -126,7 +126,39 @@ But coming back to how to use it right now?
 </ol>
 
 ## Results
+Alright, that was a long read. For the results, I have showed some intermediate results and videos below. These should give you a good idea about the current progress! And don't mind my goofy face :p
 
+<div align="center">
+  <img src="/Images/facedetect.png" width="720"/>
+
+  Intermediate results of the face-detection done on an image. S3FD gives you the xyz coordinates, amazing right?!
+</div>
+<br>
+
+<div align="center">
+  <img src="/Images/intermediate.png" width="720"/>
+
+  Landmarks interpolated to a 3D model, this is very broken and horrifying, I wish no one has to face this in life. The issue was flipped bone numbering (S3FD is a bit weird).
+</div>
+<br>
+
+<div align="center">
+  
+  https://github.com/VKG5/Blender-Face-Animation/assets/44497128/746711fa-e533-456c-84c8-1a5f3d68afb8
+
+  Detecting landmarks from a camera/video feed. As you can see there is a lot of visible jittering in the points, which is reflected in the output. This is not the best, but still a good starting point!
+</div>
+<br>
+
+<div align="center">
+
+  https://github.com/VKG5/Blender-Face-Animation/assets/44497128/a5e047b8-be18-4a32-a0ad-bbcc29b5725c
+
+  Finally, animating a 3D model based on the detected landmarks! This is still horrifying to me, but if you just want to create Blendshapes, I think it can work pretty well and fast :)
+</div>
+
+## Conclusion
+Alright, so I mentioned several times, I am still working on this project in my free time. Currently it is a good starting point, which can be made into something really good (If I can solve the jittering issues, I have a vague idea how to do so). Stay tuned for future updates!
 
 ## References
 [1] https://openaccess.thecvf.com/content_ICCV_2017/papers/Zhang_S3FD_Single_Shot_ICCV_2017_paper.pdf <br>
